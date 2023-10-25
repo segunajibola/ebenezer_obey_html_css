@@ -1,15 +1,13 @@
 .heading1 {
     text-decoration: underline;
     color: blue;
+    font-size: 24px;
 }
 
 h1, h2 {
-    color: red;
-    font-size: 40px;
+    /* font-size: 40px; */
     text-align: center;
 }
-
-
 
 h2 {
     color: blue;
@@ -25,20 +23,81 @@ h2 {
     font-style: italic;
 }
 
-p {
-    border-color: yellow;
-    border-width: 2px;
-    border-style: solid;
+.container {
+    position: relative;
+    height: 50vh;
 }
 
-.second_p {
-    padding: 100px 200px 50px;
-    margin: 100px 200px 30px 50px;
-    background-color: red;
+.img_container {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
     background-image: url(./img/Ebenezer_Obey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
 }
+  
+  .text_container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 img {
     width: 100%;
     height: 70vh;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+    border: 1px solid red;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    border: 1px solid green;
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+
+.submit {
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* TABLET DESIGN */
+@media screen and (min-width: 413px) {
+    .heading1 {
+        text-decoration-style: wavy;
+        color: green;
+        font-size: 40px;
+    }
+}
+
+/* DESKTOP DESIGN */
+@media screen and (min-width: 1300px) {
+    .heading1 {
+        text-decoration-style: dotted;
+        color: purple;
+        font-size: 80px;
+    }
 }
